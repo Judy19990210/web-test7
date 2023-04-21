@@ -1,0 +1,7 @@
+POST /register HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Content-Length: 104
+
+{"email": "test@example.com", "username": "test_user", "password": "TestPassword123!", "password_confirm": "TestPassword123!"}
+

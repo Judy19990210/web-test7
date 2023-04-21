@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login and registration - Group 10</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="login-email">E-mail:</label>
+            <input type="email" id="login-email" placeholder="Please enter your E-mail address." required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" placeholder="Please enter your password." required>
+            <button type="submit">Login</button>
+        </form>
+        <h1>Registration</h1>
+        <form id="register-form">
+            <label for="register-email">*E-mail:</label>
+            <input type="email" id="register-email" placeholder="Please enter an E-mail address." required>
+            <label for="register-username">*User name:</label>
+            <input type="text" id="register-username" placeholder="Please enter a user name." required>
+            <label for="register-password">*Password:</label>
+            <input type="password" id="register-password" placeholder="The password must be 8 to 20 characters long, including upper and lower case letters, numbers, and special characters." required>
+            <label for="register-password-confirm">*Confirm password:</label>
+            <input type="password" id="register-password-confirm" placeholder="Please enter the password again." required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
